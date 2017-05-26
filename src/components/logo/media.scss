@@ -1,0 +1,6 @@
+/*descktop detection*/
+@media screen and (min-width: 1024px) {
+    .logo {
+        font-size: get-vh(24px);
+    }
+}

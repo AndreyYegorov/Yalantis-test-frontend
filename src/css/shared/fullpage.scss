@@ -1,0 +1,26 @@
+.fullpage {
+
+    &__section {
+        position: relative;
+
+        &:last-child {
+            padding-bottom: 110px;
+        }
+
+        .startscreen,
+        .works,
+        .reviews,
+        .clients,
+        .about {
+            height: 100%;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 100;
+        }
+    }
+}

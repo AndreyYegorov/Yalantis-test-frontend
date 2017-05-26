@@ -1,0 +1,44 @@
+@media screen and (min-height: 800px) {
+    .clients {
+    
+        &__item {
+
+            &-logo {
+                
+                img {
+                    height: 130px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .clients {
+    
+        &__item {
+
+            &-logo {
+                
+                img {
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .clients {
+    
+        &__item {
+
+            &-logo {
+                
+                img {
+                    height: auto;
+                }
+            }
+        }
+    }
+}

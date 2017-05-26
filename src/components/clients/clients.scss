@@ -1,0 +1,30 @@
+.clients {
+    
+    &__heading {
+
+    }
+    &__list {
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        &-item {
+            flex: 1 1 16.66%;
+        }
+    }
+    &__item {
+        text-align: center;
+
+        &-logo {
+            
+            img {
+                max-width: 90%;
+                height: 115px;
+            }
+        }
+    }
+}
+
+@import "media.scss";

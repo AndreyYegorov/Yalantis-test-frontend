@@ -1,0 +1,33 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 1;
+    cursor: pointer;
+
+    &.theme_v1 {
+        width: 230px;
+        height: 60px;
+        line-height: 60px;
+        border: 1px solid $color_blue1;
+        font-size: 16px;
+
+        &:hover {
+
+        }
+        &:active {
+
+        }
+
+        &.is_active {
+
+        }
+
+        &.mod_white {
+            border-color: #fff;
+            color: #fff;
+        }
+    }
+}

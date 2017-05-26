@@ -1,0 +1,52 @@
+.fullpage-wrapper:not(.fp-destroyed) .works__item-wrap {
+    opacity: 0;
+    transform: translate(0, 50px);
+    transition: opacity ease-out .6s, transform ease-out .6s;
+    transition-delay: 0s;
+}
+.fp-section.active .works__item-wrap {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.fp-section.active .works__item:nth-child(2n+1) .works__item-wrap {
+    transition-delay: .6s;
+}
+.fp-section.active .works__item:nth-child(2n+2) .works__item-wrap {
+    transition-delay: .9s;
+}
+
+.fullpage-wrapper:not(.fp-destroyed) .section__heading.mod_typing, 
+.fullpage-wrapper:not(.fp-destroyed) .startscreen__heading-chunk.mod_typing {
+    opacity: 0;
+}
+.fp-section.is_typing .section__heading.mod_typing {
+    opacity: 1;
+    animation: typing 4s steps(40, end);
+    animation-fill-mode:both;
+}
+.fp-section.is_typing .startscreen__heading-chunk.mod_typing {
+    opacity: 1;
+    animation: typing 2s steps(26, end);
+    animation-fill-mode:both;
+}
+.fp-section.is_typing .startscreen__heading-chunk.mod_typing:nth-child(1) {
+    animation-delay: .1s;
+}
+.fp-section.is_typing .startscreen__heading-chunk.mod_typing:nth-child(2) {
+    animation-delay: .6s;
+}
+.fp-section.is_typing .startscreen__heading-chunk.mod_typing:nth-child(3) {
+    animation-delay: 2.4s;
+}
+.fp-section.is_typing .startscreen__heading-chunk.mod_typing:nth-child(4) {
+    animation-delay: 3.4s;
+}
+
+@keyframes typing {
+    from { 
+        width: 0; 
+    }
+    to { 
+        width: 100%; 
+    }
+}

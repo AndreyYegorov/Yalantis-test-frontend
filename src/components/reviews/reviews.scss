@@ -1,0 +1,71 @@
+.reviews {
+
+    &__heading {
+
+    }
+    &__list {
+        background-color: $color_gray2;
+        margin: 0;
+        list-style: none;
+        
+        &-item {
+         
+        }
+    }
+    &__item {
+        background-color: $color_gray2;
+        
+        &-desc {
+            position: relative;
+            width: 65%;
+            margin: 10px auto 1.5em;
+            padding: 85px 0 0;
+            color: $color_gray3;
+            font-family: $ptsansItalic_fontFamily;
+            font-size: 30px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 55px;
+                background: url(../img/quote1.png) 50% 10px no-repeat;
+            }
+        }
+        &-author {
+            display: block;
+            color: $color_blue2;
+            font-size: 20px;
+        }
+    }
+    
+    .slick-prev, .slick-next {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 70px;
+        border: none;
+        text-indent: -9999px;
+        opacity: .5;
+        transition: opacity ease-out .3s;
+
+        &:hover {
+            opacity: 1;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    .slick-prev {
+        left: -70px;
+        background: url(../img/icon-arrow1.png) 0 50% no-repeat;
+    }
+    .slick-next {
+        right: -70px;
+        background: url(../img/icon-arrow2.png) 100% 50% no-repeat;
+    }
+}
+
+@import "media.scss";

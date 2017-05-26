@@ -1,0 +1,12 @@
+/*descktop detection*/
+@media screen and (min-width: 1024px) {
+    .nav {
+    
+        &__item {
+            
+            &-link {
+                font-size: get-vh(18px);
+            }
+        }
+    }
+}

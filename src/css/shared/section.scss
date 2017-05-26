@@ -1,0 +1,44 @@
+.section {
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    
+    &__l_header {
+        width: 65%;
+        margin: 0 auto 50px;
+    }
+
+    &__heading {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0 0 1.4em;
+        color: $color_blue2;
+        font-family: $asmBold_fontFamily;
+        font-size: 42px;
+        line-height: 1.25;
+        letter-spacing: .05em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__desc {
+        font-size: 20px;
+    }
+
+    &.theme_bg__gray {
+        background-color: $color_gray2;
+    }
+
+    &.theme_bg__blue {
+        background-color: $color_blue1;
+        color: #fff;
+    }
+    &.theme_bg__blue &__heading {
+        color: #fff;
+    }
+}

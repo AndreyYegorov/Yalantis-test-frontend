@@ -1,0 +1,33 @@
+doctype html
+html(lang="en-EN")
+	include ../metadata/head.pug
+
+	body.page_main.theme_fullpage
+		header.header
+			div.container-fluid
+				div.header__wrap
+					div.header__l_pos1
+						include ../components/logo/logo.pug
+					div.header__l_pos2
+						include ../components/nav/nav__header.pug
+		main.main
+			div.main__basic.fullpage
+				div.fullpage__section
+					include ../components/startscreen/startscreen.pug
+				div.fullpage__section
+					include ../components/works/works.pug
+				div.fullpage__section
+					include ../components/reviews/reviews.pug
+				div.fullpage__section
+					include ../components/clients/clients.pug
+				div.fullpage__section
+					include ../components/about/about.pug
+		footer.footer
+			div.container-fluid
+				div.footer__wrap
+					div.footer__l_pos1
+						include ../components/nav/nav__footer.pug
+					div.footer__l_pos2
+						small.footer__copy © 2015 by GeekPowr. All rights reserved
+
+		include ../metadata/scripts.pug

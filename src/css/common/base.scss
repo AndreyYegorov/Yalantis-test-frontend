@@ -1,0 +1,57 @@
+body { 
+    background: $base_backgroundColor; 
+    color: $base_color;
+    font-family: $asmReg_fontFamily;
+    font-size: $base_fontSize;
+    line-height: $base_lineHeight;
+}
+
+a { 
+    color: $base_color__link; 
+
+    &.is_active { 
+        cursor: default; 
+    }
+
+    &:hover {
+
+    }
+    &:active { 
+         
+    }
+    &:visited {
+
+    }
+    &:focus { 
+        // outline: thin dotted; 
+    }
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    font-family: $asmReg_fontFamily;
+}
+
+.container {
+    width: $container_width; 
+    margin-right: auto; 
+    margin-left: auto; 
+    padding: 0 $container_padding__rl;
+
+    &.mod_fluid {
+        width: auto;
+        padding: 0;
+    }
+}
+
+.container-fluid {
+    padding: 0 $containerFluid_padding__rl;
+}
+
+.clearfix {
+
+    &:after { 
+        content: ""; 
+        display: table; 
+        clear: both; 
+    }
+}

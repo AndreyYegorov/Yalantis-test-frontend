@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* COMMON */
+@import "common/functions.scss";
+@import "common/variables.scss";
+@import "common/fonts.scss";
+@import "common/normalize.scss";
+@import "common/base.scss";
+@import "common/layout.scss";
+
+/* SHARED */
+@import "shared/button.scss";
+@import "shared/section.scss";
+@import "shared/fullpage.scss";
+@import "shared/media.scss";
+@import "shared/animations.scss";
+
+/* COMPONENTS */
+@import "../components/logo/logo.scss";
+@import "../components/nav/nav.scss";
+@import "../components/startscreen/startscreen.scss";
+@import "../components/works/works.scss";
+@import "../components/reviews/reviews.scss";
+@import "../components/clients/clients.scss";
+@import "../components/about/about.scss";

@@ -1,0 +1,43 @@
+.nav {
+    
+    &__panel {
+
+        &.is_hidden {
+            display: none;
+        }
+    }
+    &__list {
+        margin: 0;
+        list-style: none;
+        
+        &-item {
+            display: inline-block;
+            margin: 0 1em 0 0;
+        }
+
+        &.theme_rtl {
+
+        }
+        &.theme_rtl &-item {
+            margin: 0 0 0 1.65em;
+        }
+    }
+    &__item {
+        
+        &-link {
+            color: #fff;
+            font-family: $asmBold_fontFamily;
+            font-size: 18px;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__toggler {
+
+    }
+}
+
+@import "media.scss";

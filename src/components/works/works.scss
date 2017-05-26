@@ -1,0 +1,35 @@
+.works {
+
+    &__list {
+        margin: 0;
+        list-style: none;
+        display: flex;
+        height: 100%;
+        
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1 1 50%;
+        }
+    }
+    &__item {
+        background-color: $color_black1;
+        color: #fff;
+        padding: 50px 7% 130px;
+        
+        &-logo {
+            display: inline-block;
+            margin: 0 0 45px;
+        }
+        &-desc {
+            
+        }
+
+        &:nth-child(2n+2) {
+            background-color: $color_black2;
+        }
+    }
+}
+
+@import "media.scss";

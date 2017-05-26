@@ -1,0 +1,23 @@
+/*descktop detection*/
+@media screen and (min-width: 1024px) {
+    .works {
+
+        &__item {
+            padding: get-vh(50px) 7% get-vh(130px);
+            
+            &-logo {
+                margin: 0 0 get-vh(45px);
+            }
+        }
+    }
+}
+
+/*mobile detection*/
+@media screen and (max-width: 960px) {
+    .works {
+
+        &__item {
+            padding: 50px;
+        }
+    }
+}

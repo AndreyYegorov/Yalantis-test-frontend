@@ -1,0 +1,39 @@
+/*descktop detection*/
+@media screen and (min-width: 1024px) {
+    .reviews {
+    
+        &__item {
+            
+            &-desc {
+                font-size: get-vh(30px);
+            }
+            &-author {
+                font-size: get-vh(20px);
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .reviews {
+    
+        &__item {
+            
+            &-desc {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .reviews {
+    
+        &__item {
+            
+            &-desc {
+                width: 100%;
+            }
+        }
+    }
+}
